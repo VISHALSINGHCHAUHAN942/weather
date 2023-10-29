@@ -77,7 +77,7 @@ SearchButton.addEventListener('click', (event)=>{
 })
 
 const GetWeather =  (city) =>{
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=378603cebc014f298d5164956232702&q=${city}&days=6&aqi=no&alerts=no`;
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=378603cebc014f298d5164956232702&q=${city}&days=6&aqi=no&alerts=no`;
     
     fetch(url).then((resp) => resp.json())
     .then(data =>{ 
